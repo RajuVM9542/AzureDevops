@@ -8,8 +8,8 @@
       state: present
     when: ansible_os_family=="Debian"  
 
-  -name: start webserver
-   service:
+  - name: start webserver
+    service:
       name:  wget
       state: started
     when: ansible_os_family=="Debian"  

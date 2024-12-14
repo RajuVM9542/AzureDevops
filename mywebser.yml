@@ -9,7 +9,7 @@
     when: ansible_os_family=="Debian"  
 
   -name: start webserver
-    service:
+    apt:
       name:  wget
       state: present
     when: ansible_os_family=="Debian"  

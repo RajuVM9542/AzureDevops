@@ -2,7 +2,7 @@
   become: yes
   gather_facts: yes
   tasks:
-  - name: install webserver on ansible nodes
+  - name: install webserver on ubuntu ansible nodes
     apt:
       name: apache2
       state: present
@@ -13,3 +13,9 @@
       name:  apache2
       state: started
     when: ansible_os_family=="Debian"  
+
+  - name: install webserver on RedHat ansible nodes
+    dnf:
+      name: httpd
+      state: present
+    when: ansible_os_family=="RedHat"  

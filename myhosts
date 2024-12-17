@@ -1,2 +1,16 @@
+[mywebserver]
+10.2.0.7
+10.2.0.8
+
+
+[myappserver]
+10.2.0.7
+10.2.0.8
+
+[myDBserver]
+10.2.0.7
+10.2.0.8
+
+[myubuntuserver]
 10.2.0.7
 10.2.0.8

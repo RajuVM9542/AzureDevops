@@ -10,5 +10,10 @@
     debug:
       msg: "{{var01}}" 
   - name: i want execute direct linux command
-    command: hostname -f    
+    command: hostname -f  
+    register: myresult 
+
+  - name: i want display abot task result
+    debug:
+      msg: "{{myresult}}"   
 

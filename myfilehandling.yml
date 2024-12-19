@@ -17,4 +17,10 @@
   - name: i want to install apache2
     apt:
       name: apache2
-      state: present    
+      state: present   
+
+
+  - name: i want to copy index file into node side
+    template:
+      src: myindex.j2
+      dest: /var/www/html/index.html     

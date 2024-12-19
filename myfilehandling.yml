@@ -27,6 +27,6 @@
 
   - name: i want to get internet file
     get_url:
-      url: http://example.com/path/file.conf
-      dest: /home/rajuammu/myfolder/
+      url: hhttps://github.com/RajuVM9542/AzureDevops/blob/main/installjava.yml
+      dest: /home/rajuammu/
       force_basic_auth: yes        

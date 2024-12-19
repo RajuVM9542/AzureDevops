@@ -6,4 +6,4 @@
   - name: i want create a folder
     file:
       path: /home/rajuammu/myfolder
-      state: directory
+      state: touch

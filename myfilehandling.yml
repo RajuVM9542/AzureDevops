@@ -23,10 +23,17 @@
   - name: i want to copy index file into node side
     template:
       src: myindex.j2
-      dest: /var/www/html/index.html 
+      dest: /var/www/html/index.html
+    notify: startwebserver  
 
   - name: i want to get internet file
     get_url:
       url: https://github.com/RajuVM9542/AzureDevops/blob/main/installjava.yml
       dest: /home/rajuammu/
-      force_basic_auth: yes        
+      force_basic_auth: yes   
+
+  handlers:
+  - name: startwebserver
+    service:
+      name: apache2
+      state: restarted

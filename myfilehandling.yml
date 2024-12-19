@@ -7,3 +7,14 @@
     file:
       path: /home/rajuammu/myfolder
       state: touch
+
+  - name: i want to copy a file
+    copy:
+      src:   
+      dest: /home/rajuammu/ 
+
+
+  - name: i want to install apache2
+    apt:
+      name: apache2
+      state: present    

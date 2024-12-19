@@ -10,7 +10,7 @@
 
   - name: i want to copy a file
     copy:
-      src:   
+      src: mystaticfile  
       dest: /home/rajuammu/ 
 
 

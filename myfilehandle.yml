@@ -6,4 +6,9 @@
    file:
      path: /home/rajuammu/myfolder
      state: directory
-      
+
+  - name: i want copy a file
+    copy: 
+      src: mystaticfile
+      dest: /home/rajuammu/
+
